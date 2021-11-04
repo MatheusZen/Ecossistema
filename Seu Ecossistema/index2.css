@@ -1,0 +1,17 @@
+.sub-footer1 {
+    width: 100%;
+    height: 200px;
+    color: #fff;
+    margin-top: 300px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #8a24dd;
+}
+
+.center-footer1 {
+    padding-top: 70px;
+}
+
+.center-footer1 a {
+    color: rgb(177, 177, 177);
+}
