@@ -1,5 +1,6 @@
 # Ecossistema
 Um Ecossistema para determinadas empresas que queiram que os seus funcionários passem por cursos rápidos antes de iniciarem a função dentro da empresa.
+Link para Acesso - https://optimistic-allen-e1f629.netlify.app/
 
 Os cursos aplicados são Informática, Marketing, Administração, Logística e Segurança do Trabalho. O projeto consiste em aplicar esses conhecimentos baseados na rotina da empresa, dando a possibilidade de qualquer ajuste que a empresa desejar, incluindo os temas, se a empresa desejar incluir um outro curso por exemplo. No ecosistema cada curso possuí um questionário com 8 perguntas sobre o tema estudado, após concluir as 8 perguntas o usuário garante um certificado que pode ser emitido em PDF para facilitar o salvamento do arquivo se o mesmo desejar.
 
