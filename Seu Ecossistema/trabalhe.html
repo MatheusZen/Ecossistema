@@ -82,58 +82,68 @@
 
     <section>
         <div class="welcome">
-            <h1><strong>BEM VINDO AO SEU ECOSSISTEMA</strong></h1>
-            <p>Nosso ecossistema é focado em te ajudar a desenvolver novas habilidades para atuar em seu novo trabalho, com foco total em desenvolver as habilidades necessárias para atuar em seu cargo! Dentro desse curso você verá muita técnica e prática
-                envolvida, de diversos setores. O objetivo é que você consiga entender como funciona todos os setores interligados dentro da empresa. Desejamos uma boa sorte nessa jornada e conte com a gente!</p>
+            <h1><strong>TRABALHE COM A GENTE!</strong></h1>
+            <p>A Seu Ecossistema é uma empresa focada em desenvolvimento de colaboradores de empresas que desejam contratar a pessoa certa para a sua vaga, e por isso estamos sempre disponíveis para nossos clientes. Por esse motivo estamos sempre nos preocupando
+                em aumentar a nossa base para alcançar nossos objetivos, se você ainda não conhece nossos objetivos <a href="objetivo.html">clique aqui</a> e se você se assimilar com os objetivos e quiser fazer parte da nossa empresa é só nos enviar o
+                seu currículo abaixo, preencher alguns dados e pronto, seu currículo já vai estar em nosso banco de dados. Boa sorte!!
+            </p>
         </div>
 
-        <div class="container">
-            <div class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd">
-                <div class="column">
-                    <a href="a-informatica.html">Informática</a>
+        <div class="log-in">
+            <div class="log">
+
+                <form>
+                    <label for="myfile">Escolha um arquivo:</label>
+                    <input type="file" id="myfile" name="myfile">
+                </form>
+
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Insira seu nome">
+                    </div>
                 </div>
-                <div class="column">
-                    <a href="a-seguranca.html">Segurança</a>
+
+                <div class="field">
+                    <label class="label">Contato</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Insira seu contato">
+                    </div>
                 </div>
-                <div class="column">
-                    <a href="a-logistica.html">Logística</a>
+
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input class="input" type="email" placeholder="potaldasabedoria@hotmail.com.br">
+                    </div>
                 </div>
-                <div class="column">
-                    <a href="a-marketing.html">Marketing</a>
+
+                <div class="field">
+                    <label class="label">Faça um breve resumo sobre você</label>
+                    <div class="control">
+                        <textarea class="textarea" placeholder="Insira um comentário personalizado"></textarea>
+                    </div>
                 </div>
-                <div class="column">
-                    <a href="a-administracao.html">Administração</a>
+
+                <div class="field">
+                    <div class="control">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            Eu aceito os seguintes <a href="#">termos e condições</a>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button class="button">Enviar</button>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="welcome">
-            <h1><strong>COMPLETE TODAS AS TASKS</strong></h1>
-            <p>Não deixe de completar todos os conteúdos de todas as matérias, isso irá contribuir com o seu desenvolvimento dentro da empresa. Ah, lembre-se que a sua empresa tem total visibilidade das suas notas e do quanto você completou das matérias.
-                Bons estudos!</p>
-        </div>
-
-        <div class="welcome">
-            <h1><strong>OPÇÕES ABAIXO, TUDO OQUE VOCÊ PRECISA SABER</strong></h1>
-            <p>Nas opções abaixo, você pode entrar em contato coma nossa equipe para obter ajuda em qualquer questão, também é possível reportar qualquer tipo de erro e também entender um pouco mais quem somos nós e qual o nosso objetivo. Não esqueça de
-                se cadastrar em nosso Newsletter para ficar por dentro de tudo!</p>
-        </div>
-
-        <div class="container">
-            <div class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd">
-                <div class="column1">
-                    <a href="sobre.html">Sobre</a>
-                </div>
-                <div class="column1">
-                    <a href="objetivo.html">Objetivo</a>
-                </div>
-                <div class="column1">
-                    <a href="contato.html">Contato</a>
-                </div>
-                <div class="column1">
-                    <a href="erro.html">Reporte</a>
-                </div>
-            </div>
+        <div class="button-back">
+            <a href="index.html">Voltar</a>
         </div>
     </section>
 
@@ -143,34 +153,17 @@
             <p>Entre em contato <a href="mailto:matheus_zen@hotmail.com">matheus_zen@hotmail.com</a></p>
         </div>
     </footer>
+
 </body>
 
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-
-        // Get all "navbar-burger" elements
-        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-        // Check if there are any navbar burgers
-        if ($navbarBurgers.length > 0) {
-
-            // Add a click event on each of them
-            $navbarBurgers.forEach(el => {
-                el.addEventListener('click', () => {
-
-                    // Get the target from the "data-target" attribute
-                    const target = el.dataset.target;
-                    const $target = document.getElementById(target);
-
-                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                    el.classList.toggle('is-active');
-                    $target.classList.toggle('is-active');
-
-                });
-            });
+    const fileInput = document.querySelector('#file-js-example input[type=file]');
+    fileInput.onchange = () => {
+        if (fileInput.files.length > 0) {
+            const fileName = document.querySelector('#file-js-example .file-name');
+            fileName.textContent = fileInput.files[0].name;
         }
-
-    });
+    }
 </script>
 
 </html>
